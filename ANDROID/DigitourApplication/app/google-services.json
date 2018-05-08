@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "1093333666878",
+    "firebase_url": "https://digitourapplication-b1c20.firebaseio.com",
+    "project_id": "digitourapplication-b1c20",
+    "storage_bucket": "digitourapplication-b1c20.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093333666878:android:95d95da1ee9d3f9e",
+        "android_client_info": {
+          "package_name": "praktikum.develops.a11414001.digitourapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093333666878-une8op924lg4dhser0h2snvtdu89psm8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "praktikum.develops.a11414001.digitourapplication",
+            "certificate_hash": "a329613e2d33e4db330b5984e8c65cd2fe1867c6"
+          }
+        },
+        {
+          "client_id": "1093333666878-oi91vjaho1lj8shkhms0l7vcnpv5ao87.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "praktikum.develops.a11414001.digitourapplication",
+            "certificate_hash": "2ffea1241409183197b2c2fa77503e5659f88f19"
+          }
+        },
+        {
+          "client_id": "1093333666878-p8qp9a6hglnopeh45khs073113je00ci.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "praktikum.develops.a11414001.digitourapplication",
+            "certificate_hash": "3bd5bd19e1231c0fc165fb5777384c521316fe1c"
+          }
+        },
+        {
+          "client_id": "1093333666878-5vu9lph4vc7fg9tfj8jb381rfn54ncg9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNY-5GqkGBtctEXZTbYlBZnfYfxt3ybUM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093333666878-5vu9lph4vc7fg9tfj8jb381rfn54ncg9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context="praktikum.develops.a11414001.digitourapplication.activity.ScoreActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score"
+        android:textColor="#fff"
+        android:textAlignment="center"
+        android:textSize="30dp"/>
+
+    <TextView
+        android:id="@+id/nilaiscore"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="100"
+        android:textAlignment="center"
+        android:textSize="50dp"/>
+
+    <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    <Button
+        android:id="@+id/btnNextScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/minibuttonstyle"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginBottom="66dp" />
+
+    <Button
+        android:id="@+id/btnShareScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/minibuttonstyle"
+        android:text="Share"
+        android:layout_alignBaseline="@+id/btnHome"
+        android:layout_alignBottom="@+id/btnHome"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+        <Button
+            android:id="@+id/btnHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/minibuttonstyle"
+            android:text="Home"
+            android:layout_alignBaseline="@+id/btnNextScore"
+            android:layout_alignBottom="@+id/btnNextScore"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

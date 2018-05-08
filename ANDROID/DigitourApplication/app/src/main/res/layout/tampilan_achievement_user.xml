@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_play"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hadiahAchievementUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageAchievement"
+                android:layout_toRightOf="@+id/imageAchievement"
+                android:text="hadiah"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/lokasiAchievementUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="tempatnya"
+                android:textColor="#FFF"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imageAchievement"
+                android:layout_toEndOf="@+id/imageAchievement" />
+            <TextView
+                android:id="@+id/typeAchievementUser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="type"
+                android:textColor="#FFF"/>
+            <View
+                android:layout_height="2dip"
+                android:background="#fff"
+                android:layout_width="match_parent" />
+        </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/list_play"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp"
+    android:paddingLeft="1dp"
+    android:paddingRight="1dp"
+    android:paddingTop="1dp"
+    tools:context="praktikum.develops.a11414001.digitourapplication.activity.LeaderboardActivity"
+    android:orientation="vertical">
+
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/table_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+    <TableRow>
+        <TextView android:text="Nama"
+            android:id="@+id/namaLeaderboard"
+            android:textColor="#fff"
+            android:layout_width="10dp"
+            android:layout_column="0"
+            android:layout_weight="1"/>
+        <TextView android:text="Tempat"
+            android:id="@+id/tempatLeaderboard"
+            android:textColor="#fff"
+            android:layout_width="10dp"
+            android:layout_column="1"
+            android:layout_weight="1">
+        </TextView>
+        <TextView android:text="challengetype"
+            android:id="@+id/typeLeaderboard"
+            android:layout_width="20dp"
+            android:textColor="#fff"
+            android:layout_column="2"
+            android:layout_weight="1"/>
+        <TextView android:text="score"
+            android:id="@+id/scoreLeaderboard"
+            android:layout_width="5dp"
+            android:layout_column="3"
+            android:textColor="#fff"
+            android:layout_weight="1"/>
+        <TextView android:text="datetime"
+            android:id="@+id/datetimeLeaderboard"
+            android:layout_width="10dp"
+            android:textColor="#fff"
+            android:layout_column="4"
+            android:layout_weight="1"/>
+    </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#fff" />
+</TableLayout>
+
+</LinearLayout>

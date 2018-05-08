@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="praktikum.develops.a11414001.digitourapplication.activity.ChallangeTypeActivity">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/txtchallange"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:layout_height="wrap_content"
+        android:text="Challange Type "
+        android:textAlignment="center"/>
+
+    <GridLayout
+        android:id="@+id/grdchallange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btninfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="125dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnPG"
+                android:background="@drawable/buttonstyle"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilihan Ganda" />
+
+            <Button
+                android:id="@+id/btnTF"
+                android:background="@drawable/buttonstyle"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="True or False" />
+
+            <Button
+                android:id="@+id/btnAR"
+                android:background="@drawable/buttonstyle"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Augmented Reality" />
+        </LinearLayout>
+
+    </GridLayout>
+    <Button
+        android:text="Info"
+        android:background="@drawable/minibuttonstyle"
+        android:layout_marginLeft="13dp"
+        android:id="@+id/btninfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Audio Desc"
+        android:background="@drawable/minibuttonstyle"
+        android:id="@+id/btnSound"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/grdchallange"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    tools:context="praktikum.develops.a11414001.digitourapplication.activity.InformasiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:scaleType="fitCenter"
+        android:id="@+id/txtinformasi"
+        android:textSize="20dp"
+        android:text="Informasi Digitour"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textAlignment="center"/>
+        </LinearLayout>
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/grdViewinformasi"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_margin="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:textColor="#fff"
+                    android:textSize="17dp"
+                    android:text="Digitour adalah aplikasi yang berhubungan dengan tempat-tempat wisata yang unik. "/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#fff"
+                    android:text="\nDan juga aplikasi ini menyediakan tantangan terhadap pengguna berupa pertanyaan yang terkait tempat wisata yang tersedia di alikasi ini."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17dp"
+                    android:textColor="#fff"
+                    android:text="\nDigitour Challenge memiliki 3 jenis rintangan berupa :"/>
+                <TextView
+                    android:textSize="17dp"
+                    android:textColor="#fff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="\n(1) Pilihan Ganda\n(2) Benar Atau Salah \n(3) Augmented Reality"/>
+                <TextView
+                    android:textSize="17dp"
+                    android:textColor="#fff"
+                    android:text="\nDigitour menyediakan beberapa lokasi yang masing-masing lokasi memiliki checkpoint yang dimana checkpointnya berupa tempat-tempat wisata."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+    </GridLayout>
+
+</LinearLayout>

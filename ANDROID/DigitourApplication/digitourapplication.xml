@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="digitourapplication" default="all">
+  
+  
+  <property file="digitourapplication.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="700m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/*.rbc/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/vssver.scc/**"/>
+    <exclude name="**/vssver2.scc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.war"/>
+    <include name="*.swc"/>
+    <include name="*.apk"/>
+    <include name="*.zip"/>
+    <include name="*.ear"/>
+    <include name="*.egg"/>
+    <include name="*.ane"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <exclude name="**/?*.java"/>
+    <exclude name="**/?*.form"/>
+    <exclude name="**/?*.class"/>
+    <exclude name="**/?*.groovy"/>
+    <exclude name="**/?*.scala"/>
+    <exclude name="**/?*.flex"/>
+    <exclude name="**/?*.kt"/>
+    <exclude name="**/?*.clj"/>
+    <exclude name="**/?*.aj"/>
+  </patternset>
+  
+  <!-- JDK definitions -->
+  
+  <property name="jdk.bin.1.8" value="${jdk.home.1.8}/bin"/>
+  <path id="jdk.classpath.1.8">
+    <fileset dir="${jdk.home.1.8}">
+      <include name="jre/lib/charsets.jar"/>
+      <include name="jre/lib/deploy.jar"/>
+      <include name="jre/lib/ext/access-bridge-64.jar"/>
+      <include name="jre/lib/ext/cldrdata.jar"/>
+      <include name="jre/lib/ext/dnsns.jar"/>
+      <include name="jre/lib/ext/jaccess.jar"/>
+      <include name="jre/lib/ext/jfxrt.jar"/>
+      <include name="jre/lib/ext/localedata.jar"/>
+      <include name="jre/lib/ext/nashorn.jar"/>
+      <include name="jre/lib/ext/sunec.jar"/>
+      <include name="jre/lib/ext/sunjce_provider.jar"/>
+      <include name="jre/lib/ext/sunmscapi.jar"/>
+      <include name="jre/lib/ext/sunpkcs11.jar"/>
+      <include name="jre/lib/ext/zipfs.jar"/>
+      <include name="jre/lib/javaws.jar"/>
+      <include name="jre/lib/jce.jar"/>
+      <include name="jre/lib/jfr.jar"/>
+      <include name="jre/lib/jfxswt.jar"/>
+      <include name="jre/lib/jsse.jar"/>
+      <include name="jre/lib/management-agent.jar"/>
+      <include name="jre/lib/plugin.jar"/>
+      <include name="jre/lib/resources.jar"/>
+      <include name="jre/lib/rt.jar"/>
+    </fileset>
+  </path>
+  
+  <property name="project.jdk.home" value="${jdk.home.1.8}"/>
+  <property name="project.jdk.bin" value="${jdk.bin.1.8}"/>
+  <property name="project.jdk.classpath" value="jdk.classpath.1.8"/>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.android-adapters-2.0.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/38a58e41862682352f9eaeec9681eb583a9573d1/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/38a58e41862682352f9eaeec9681eb583a9573d1/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.android-android-25.classpath">
+    <pathelement location="C:/Users/Sandy/AppData/Local/Android/sdk/platforms/android-25/android.jar"/>
+  </path>
+  
+  <path id="library.android-gif-drawable-1.1.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/ab6dd1300b94548fcb3b08633a07b4b6de3bc3c4/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/ab6dd1300b94548fcb3b08633a07b4b6de3bc3c4/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.animated-vector-drawable-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/83abcfe2e737be94054d873f4c2d0f38820332ed/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/83abcfe2e737be94054d873f4c2d0f38820332ed/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.appcompat-v7-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/cf65eb103544ceadc78bfbdcd1e986406d9d84e8/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/cf65eb103544ceadc78bfbdcd1e986406d9d84e8/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.bolts-android-1.4.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.4.0/cc174c559b5177982887bf6e1b76003aebad9516/bolts-android-1.4.0.jar"/>
+  </path>
+  
+  <path id="library.bolts-applinks-1.4.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"/>
+  </path>
+  
+  <path id="library.bolts-tasks-1.4.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"/>
+  </path>
+  
+  <path id="library.cardview-v7-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/f9d39ff82e465ec17d2db406c05dcab68d8a715e/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/f9d39ff82e465ec17d2db406c05dcab68d8a715e/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.constraint-layout-1.0.0-alpha7.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/40fb782af70822fd344d972a32f4d0036ec3cbf9/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/40fb782af70822fd344d972a32f4d0036ec3cbf9/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.constraint-layout-solver-1.0.0-alpha7.classpath">
+    <pathelement location="C:/Users/Sandy/AppData/Local/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.0-alpha7/constraint-layout-solver-1.0.0-alpha7.jar"/>
+  </path>
+  
+  <path id="library.converter-gson-2.1.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"/>
+  </path>
+  
+  <path id="library.customtabs-25.0.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/29b381589e981aeff4ecb1f82ba59b8b607ec13c/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/29b381589e981aeff4ecb1f82ba59b8b607ec13c/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.espresso-core-2.2.2.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/d7f0188190dc751f8a28adbfeefff14f341de07f/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/d7f0188190dc751f8a28adbfeefff14f341de07f/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.espresso-idling-resource-2.2.2.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/f3809dfcd964d242032ce52c91ea58a624d530d9/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/f3809dfcd964d242032ce52c91ea58a624d530d9/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.exposed-instrumentation-api-publish-0.5.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/3037efa4734aadd62638a002a98df329f89b1ce2/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/3037efa4734aadd62638a002a98df329f89b1ce2/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.facebook-android-sdk-4.20.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/e726809c3043af2bf271f374ad55483e8c7fa46c/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/e726809c3043af2bf271f374ad55483e8c7fa46c/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.firebase-analytics-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/3b6fab2f9f778c629fc1b755beee592990cfdf20/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/3b6fab2f9f778c629fc1b755beee592990cfdf20/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.firebase-analytics-impl-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/5fcee7256ecbdf0006057ec4622efa5e5bd6597e/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/5fcee7256ecbdf0006057ec4622efa5e5bd6597e/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.firebase-auth-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/8f25a0b1497b670bbe1818c73db9331510ec812b/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/8f25a0b1497b670bbe1818c73db9331510ec812b/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.firebase-common-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/67645c84b48316b0a2ba4d7046cdc277bed71189/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/67645c84b48316b0a2ba4d7046cdc277bed71189/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.firebase-core-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/daa350e017a5717f9ab3d0e002059f2c5c0a63e9/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/daa350e017a5717f9ab3d0e002059f2c5c0a63e9/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.firebase-iid-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/e2a943eae739dcd522387d717021119420aa6909/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/e2a943eae739dcd522387d717021119420aa6909/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.glide-3.7.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/3.7.0/9e9eeaf9948ee4d6c3ab354e8dc14368f16994a4/glide-3.7.0.jar"/>
+  </path>
+  
+  <path id="library.gson-2.2.2.classpath">
+    <pathelement location="${basedir}/app/libs/gson-2.2.2.jar"/>
+  </path>
+  
+  <path id="library.gson-2.7.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"/>
+  </path>
+  
+  <path id="library.guava-jdk5-17.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/17.0/463f8378feba44df7ba7cd9272d01837dad62b36/guava-jdk5-17.0.jar"/>
+  </path>
+  
+  <path id="library.hamcrest-core-1.3.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/42a25dc3219429f0e5d060061f71acb49bf010a0/hamcrest-core-1.3.jar"/>
+  </path>
+  
+  <path id="library.hamcrest-integration-1.3.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-integration/1.3/5de0c73fef18917cd85d0ab70bb23818685e4dfd/hamcrest-integration-1.3.jar"/>
+  </path>
+  
+  <path id="library.hamcrest-library-1.3.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-library/1.3/4785a3c21320980282f9f33d0d1264a69040538f/hamcrest-library-1.3.jar"/>
+  </path>
+  
+  <path id="library.javawriter-2.1.1.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.1.1/67ff45d9ae02e583d0f9b3432a5ebbe05c30c966/javawriter-2.1.1.jar"/>
+  </path>
+  
+  <path id="library.javax.annotation-api-1.2.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/javax.annotation/javax.annotation-api/1.2/479c1e06db31c432330183f5cae684163f186146/javax.annotation-api-1.2.jar"/>
+  </path>
+  
+  <path id="library.javax.inject-1.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"/>
+  </path>
+  
+  <path id="library.jsr305-2.0.1.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/2.0.1/516c03b21d50a644d538de0f0369c620989cd8f0/jsr305-2.0.1.jar"/>
+  </path>
+  
+  <path id="library.junit-4.12.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/2973d150c0dc1fefe998f834810d68f278ea58ec/junit-4.12.jar"/>
+  </path>
+  
+  <path id="library.nineoldandroids-2.4.0.classpath">
+    <pathelement location="${basedir}/app/libs/nineoldandroids-2.4.0.jar"/>
+  </path>
+  
+  <path id="library.okhttp-2.3.0.classpath">
+    <pathelement location="${basedir}/app/libs/okhttp-2.3.0.jar"/>
+  </path>
+  
+  <path id="library.okhttp-3.6.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.6.0/69edde9fc4b01c9fd51d25b83428837478c27254/okhttp-3.6.0.jar"/>
+  </path>
+  
+  <path id="library.okio-1.11.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.11.0/840897fcd7223a8143f1d9b6f69714e7be34fd50/okio-1.11.0.jar"/>
+  </path>
+  
+  <path id="library.play-services-auth-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/869982f8f3feaecd5373c3ba2391160723fac377/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/869982f8f3feaecd5373c3ba2391160723fac377/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.play-services-auth-base-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/b832bcc37568207671cd0798882cd5d650d0145f/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/b832bcc37568207671cd0798882cd5d650d0145f/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.play-services-base-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/052a5b427205cbdbffb444d8bcba836c314ff2b2/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/052a5b427205cbdbffb444d8bcba836c314ff2b2/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.play-services-basement-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/401c11b81dcfb475d29dff7baf5f9f75e80e7fa0/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/401c11b81dcfb475d29dff7baf5f9f75e80e7fa0/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.play-services-maps-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/80f7f06dd7016ba85aff4df331a25d976f650cf7/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/80f7f06dd7016ba85aff4df331a25d976f650cf7/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.play-services-tasks-10.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/c022110787488c5754b954d63aab3be00afc1ec4/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/c022110787488c5754b954d63aab3be00afc1ec4/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.realm-android-library-3.0.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/ebc5c77887841f6c6d34471083be46bca23bc4f2/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/ebc5c77887841f6c6d34471083be46bca23bc4f2/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.realm-annotations-3.0.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/io.realm/realm-annotations/3.0.0/32a01bbb8cb421b6d53d7a102412142b0391c8c7/realm-annotations-3.0.0.jar"/>
+  </path>
+  
+  <path id="library.recyclerview-v7-24.2.1.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/87368d7df24f1cb16d7f96d1cad7f705bbd1e240/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/87368d7df24f1cb16d7f96d1cad7f705bbd1e240/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.relinker-1.2.2.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/446b82b1b00274d4d25319d3cdc8a6c229e6073e/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/446b82b1b00274d4d25319d3cdc8a6c229e6073e/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.retrofit-1.9.0.classpath">
+    <pathelement location="${basedir}/app/libs/retrofit-1.9.0.jar"/>
+  </path>
+  
+  <path id="library.retrofit-2.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.2.0/41e67dba73c3347e4503761642c39d0e06ca1f2/retrofit-2.2.0.jar"/>
+  </path>
+  
+  <path id="library.rules-0.5.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/597d4678d3a821cdbc7eab65d87bc51070ede627/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/597d4678d3a821cdbc7eab65d87bc51070ede627/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.runner-0.5.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/2bee7f90efc0f7ee51915a32b237c8fa3c25a3cc/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/2bee7f90efc0f7ee51915a32b237c8fa3c25a3cc/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-annotations-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.2.0/support-annotations-25.2.0.jar"/>
+  </path>
+  
+  <path id="library.support-compat-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/7ed37d0b4e689f1a06acf023582afc4b37b4893f/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/7ed37d0b4e689f1a06acf023582afc4b37b4893f/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-core-ui-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/de6f9c6b1130671f4b241569266be5f52bd825e7/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/de6f9c6b1130671f4b241569266be5f52bd825e7/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-core-utils-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/09a56f2342076e3c71f8f1c78d0a77f00f8e67f4/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/09a56f2342076e3c71f8f1c78d0a77f00f8e67f4/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-fragment-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/c338327d2419cf034c6a2340548d01aac37d4413/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/c338327d2419cf034c6a2340548d01aac37d4413/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-media-compat-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/3ec8e0a2f034bce3dbfb8e9a8ec7e0464e0dec90/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/3ec8e0a2f034bce3dbfb8e9a8ec7e0464e0dec90/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-v4-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/551daee4547bb25a8c665715952df8fb5c5d37b8/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/551daee4547bb25a8c665715952df8fb5c5d37b8/output/jars/classes.jar"/>
+  </path>
+  
+  <path id="library.support-vector-drawable-25.2.0.classpath">
+    <pathelement location="C:/Users/Sandy/.android/build-cache/4807afc975da9e6f65ae9ce860dce5147c60a287/output/res"/>
+    <pathelement location="C:/Users/Sandy/.android/build-cache/4807afc975da9e6f65ae9ce860dce5147c60a287/output/jars/classes.jar"/>
+  </path>
+  <!-- Register Custom Compiler Taskdefs -->
+  <property name="javac2.home" value="${idea.home}/lib"/>
+  <path id="javac2.classpath">
+    <pathelement location="${javac2.home}/javac2.jar"/>
+    <pathelement location="${javac2.home}/jdom.jar"/>
+    <pathelement location="${javac2.home}/asm-all.jar"/>
+    <pathelement location="${javac2.home}/jgoodies-forms.jar"/>
+  </path>
+  <target name="register.custom.compilers">
+    <taskdef name="javac2" classname="com.intellij.ant.Javac2" classpathref="javac2.classpath"/>
+    <taskdef name="instrumentIdeaExtensions" classname="com.intellij.ant.InstrumentIdeaExtensions" classpathref="javac2.classpath"/>
+  </target>
+  
+  <!-- Modules -->
+  
+  <import file="${basedir}/app/module_app.xml"/>
+  
+  <import file="${basedir}/module_digitourapplication.xml"/>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.app, clean.module.digitourapplication" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.app, compile.module.digitourapplication" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

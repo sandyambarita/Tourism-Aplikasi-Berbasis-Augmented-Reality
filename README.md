@@ -1,3 +1,4 @@
 - Pada Folder Database terdapat file .sql dimana file tersebut merupakan database project, menggunakan SQLYog
 - Pada folder web service merupakan webservice project menggunakan slim php. Sebaiknya menggunakan XAMPP dan dimasukkan ke fokder htdoc
 - Pada folder web merupakan project yii2 untuk web project untuk melakukan inputan data terhadap aplikasi
+- Pada saat play pada aplikasi akan muncul map dan check point akan muncul pada map apabila berada 2 km dari posisi kira(radius), agar checkpoint muncul tanpa  radius sebaiknya diubah pada conditional pada MapActivity.(Lokasi yang tersedia berada di sekitar toba samosir, samosir , sumatera utara).

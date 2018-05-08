@@ -1,0 +1,3 @@
+- Pada Folder Database terdapat file .sql dimana file tersebut merupakan database project, menggunakan SQLYog
+- Pada folder web service merupakan webservice project menggunakan slim php. Sebaiknya menggunakan XAMPP dan dimasukkan ke fokder htdoc
+- Pada folder web merupakan project yii2 untuk web project untuk melakukan inputan data terhadap aplikasi
